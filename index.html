@@ -19,8 +19,13 @@
 </div>
 
 <div>
+<button id="greet">greet</button>
+
 <script>
-document.write("hello");
+document.getElementById("greet")
+.addEventListener('click', () => {
+	console.log("hello");
+});
 </script>
 </div>
 
