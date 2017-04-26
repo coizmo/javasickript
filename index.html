@@ -8,25 +8,33 @@
 
 <div class="nav">
 
-<ul class="nl clearFix">
-<li><a href="#">メニュー項目1</a></li>
-<li><a href="#">メニュー項目2</a></li>
-<li><a href="#">メニュー項目3</a></li>
-<li><a href="#">メニュー項目4</a></li>
-<li><a href="#">メニュー項目5</a></li>
-</ul>
+    <ul class="nl clearFix">
+        <li id="menu1"><a href="#">メニュー項目1</a></li>
+        <li id="menu2"><a href="#">メニュー項目2</a></li>
+        <li id="menu3"><a href="#">メニュー項目3</a></li>
+        <li id="menu4"><a href="#">メニュー項目4</a></li>
+        <li id="menu5"><a href="#">メニュー項目5</a></li>
+    </ul>
 
 </div>
 
 <div>
-<button id="greet">greet</button>
+    <button id="greet">greet</button>
+</div>
+
+<div>
+    
+</div>
 
 <script>
 document.getElementById("greet")
 .addEventListener('click', () => {
-	console.log("hello");
-});
-</script>
-</div>
+	console.log("hello")
+})
 
+document.getElementById("menu1")
+.addEventListener('click', () => {
+    console.log("menu1")
+})
+</script>
 </body>
