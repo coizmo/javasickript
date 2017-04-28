@@ -9,7 +9,8 @@ var far = 1000;
 
 var camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 
-camera.position.set(0, 0, 60);
+camera.position.set(0, 0, 1);
+scene.add(camera);
 
 // light
 var light = new THREE.DirectionalLight(0xffffff);
@@ -26,27 +27,23 @@ renderer.setPixelRatio(window.devicePixelRatio);
 
 document.body.appendChild(renderer.domElement);
 
-var orbitControls = new THREE.OrbitControls(camera)
+var orbitControls = new THREE.OrbitControls(camera);
 
 /*
  * draw objects
  */
 
-var sphereGeometry = new THREE.SphereGeometry(40, 16, 16);
-sphereGeometry.scale(-1, 1, 1);
-var sphereMaterial = new THREE.MeshBasicMaterial( {color: 0x0080e3, wireframe: true } );
-var sphereMaterialTexture = new THREE.MeshPhongMaterial({
-	color: 0xffffff,
-	ambient: 0xffffff,
-	specular: 0xcccccc,
-	shininess: 50,
-	metal: true,
-	map: new THREE.TextureLoader('./image.jpg')
-});
-var sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
-sphere.position.set( 0, 0, 0 );
-scene.add(sphere);
-
+var geometry = new THREE.SphereGeometry(5, 64, 36);
+geometry.scale(-1, 1, 1);
+var loader = new THREE.TextureLoader();
+loader.load("image.jpg", function(texture){
+    sphere = new THREE.Mesh(
+        geometry,
+        new THREE.MeshBasicMaterial({map: texture})
+    );
+    sphere.position.set(0, 0, 0);
+    scene.add(sphere);
+})
 
 function rendererRender() {
     renderer.render(scene,camera);
