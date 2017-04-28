@@ -9,7 +9,7 @@ var far = 1000;
 
 var camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 
-camera.position.set(0, 0, 1);
+camera.position.set(0, 0, 0);
 scene.add(camera);
 
 // light
@@ -28,6 +28,18 @@ renderer.setPixelRatio(window.devicePixelRatio);
 document.body.appendChild(renderer.domElement);
 
 var orbitControls = new THREE.OrbitControls(camera);
+orbitControls.target.set(
+    camera.position.x + 0.1,
+    camera.position.y,
+    camera.position.z
+);
+
+orbitControls.noZoom = true;
+orbitControls.noPan = true;
+
+orbitControls.enableDamping = true;
+orbitControls.dampingFactor = 0.1;
+orbitControls.rotateSpeed = 0.08;
 
 /*
  * draw objects
