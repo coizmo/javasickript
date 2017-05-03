@@ -41,6 +41,9 @@ orbitControls.enableDamping = true;
 orbitControls.dampingFactor = 0.1;
 orbitControls.rotateSpeed = 0.08;
 
+orbitControls.autoRotate = true;
+orbitControls.autoRotateSpeed = 0.05;
+
 /*
  * draw objects
  */
