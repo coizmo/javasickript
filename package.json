@@ -1,0 +1,12 @@
+{
+  "name": "javasickript",
+  "version": "0.1.0",
+  "description": "the repository for training javascript cursed by java.",
+  "main": "index.js",
+  "repository": "https://github.com/coizmo/javasickript.git",
+  "author": "coizmo <coizmo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "csv": "^1.1.1"
+  }
+}
