@@ -1,15 +1,45 @@
-#fill1 {
-background-color: #99f9f9;
-border-top: 1px #cccccc solid;
-border-bottom: 1px #cccccc solid;
-font-size: 80%;
+#fill_1 {
+    background-color: #eeeeee;
+    height: 200px;
+    width: 200px;
+    border: 1px #434343 solid;
 }
 
-#fill2 {
-background-color: #9999f9;
-border-top: 1px #cccccc solid;
-border-bottom: 1px #cccccc solid;
-font-size: 80%;
+#fill_1_1 {
+    background-color: #99f9f9;
+    float: left;
+    height: 180px;
+    width: 120px;
+    border: 1px #434343 solid;
+}
+
+#fill_1_2 {
+    background-color: #9999f9;
+    height: 120px;
+    width: 180px;
+    border: 1px #434343 solid;
+}
+
+#fill_2 {
+    background-color: #eeeeee;
+    height: 200px;
+    width: 200px;
+    border: 1px #434343 solid;
+}
+
+#fill_2_1 {
+    background-color: #99f9f9;
+    float: left;
+    height: 120px;
+    width: 180px;
+    border: 1px #434343 solid;
+}
+
+#fill_2_2 {
+    background-color: #9999f9;
+    height: 180px;
+    width: 120px;
+    border: 1px #434343 solid;
 }
 
 #fill3 {
