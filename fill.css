@@ -1,8 +1,10 @@
-#fill_1 {
+div.fill {
     background-color: #eeeeee;
+    float: left;
     height: 200px;
     width: 200px;
     border: 1px #434343 solid;
+    margin: 20px;
 }
 
 #fill_1_1 {
@@ -42,17 +44,34 @@
     border: 1px #434343 solid;
 }
 
-#fill3 {
-background-color: #f999f9;
-border-top: 1px #cccccc solid;
-border-bottom: 1px #cccccc solid;
-font-size: 80%;
+#fill_2_3 {
+    background-color: #f9f999;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border: 1px #434343 solid;
 }
 
-#fill4 {
+#fill_2_4 {
+    background-color: #f999f9;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border: 1px #434343 solid;
+}
+
+#fill_3_1 {
+    background-color: #99f9f9;
+    float: left;
+    height: 80px;
+    width: 50px;
+    border: 1px #434343 solid;
+}
+
+#fill_4 {
 background-color: #f9f999;
-border-top: 1px #cccccc solid;
-border-bottom: 1px #cccccc solid;
-font-size: 80%;
+height: 100px;
+width: 100px;
+border: 1px #434343 solid;
 }
 
