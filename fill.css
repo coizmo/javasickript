@@ -75,10 +75,57 @@ div.fill {
 }
 
 #fill_4_2 {
-    background-color: #f999f9;
     float: left;
+    position: relative;
     height: 60%;
     width: 20%;
+}
+
+#fill_4_2_a {
+    background-color: #f999f9;
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+#fill_4_2_b {
+    background-color: #f969f9;
+    position: absolute;
+    z-index: 10;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+}
+#fill_4_2_cc {
+    position: absolute;
+    z-index: 5;
+    left: 100%;
+    height: 40px;
+    width: 40px;
+}
+#fill_4_2_c {
+    position: absolute;
+    z-index: 5;
+    left: 200%;
+    height: 40px;
+    width: 40px;
+}
+#fill_4_2_c_1 {
+    background-color: lightpink;
+    position: absolute;
+    z-index: auto;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+}
+#fill_4_2_c_2 {
+    background-color: lightblue;
+    position: absolute;
+    z-index: auto;
+    top: 10px;
+    left: 40px;
+    height: 20px;
+    width: 20px;
 }
 
 #fill_4_3 {
